@@ -37,6 +37,7 @@ RUN set -x \
 	vnc4server \
 	wget \
 	xfce4 \
+	ia32-libs-sdl
  && mkdir -p $NO_VNC_HOME/utils/websockify \
  && wget -qO- https://github.com/kanaka/noVNC/archive/master.tar.gz | tar xz --strip 1 -C $NO_VNC_HOME \
  && wget -qO- https://github.com/kanaka/websockify/archive/v0.7.0.tar.gz | tar xz --strip 1 -C $NO_VNC_HOME/utils/websockify \
